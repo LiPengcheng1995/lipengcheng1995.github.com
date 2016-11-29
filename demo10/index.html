@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>播放器尝试</title>
+		<link rel="stylesheet" href="./css/player_css.css" />
+	</head>
+	
+	<body>
+		<div id="container">
+			<div id="header">音乐播放器</div>
+			<div id="main">
+				<div id="left">
+					<p id="playedName">歌曲名</p>
+					<p id="playedPlayerName">歌手名</p>
+					<div id="cover"></div>
+					<!--<div id="frequency"></div>-->
+				</div>
+				<div id="right"></div>
+			</div>
+			<div id="footer">
+				<div id="lastOne"></div>
+				<div id="pouse"></div>
+				<div id="nextOne"></div>
+				<div id="sound">
+					<div id="soundIcon"></div>
+					<div id="soundProgress">
+						<div id="soundProgressAll">
+							<div id="soundProgressNow"></div>
+						</div>
+					</div>
+				</div>
+				<div id="timeNow">
+					<p id="timeNowText">00:00</p>
+				</div>
+				<div id="progress">
+					<div id="musicProgressAll">
+						<div id="musicProgressNow"></div>
+					</div>
+				</div>
+				<div id="timeAll">
+					<p id="timeAllText">00:00</p>
+				</div>
+				<audio src="music/徐良 - 那时雨.mp3" id="player"  loop = "loop"></audio>
+			</div>
+			<div id="showButton">
+				<div id="list">
+					<div class="item">那时雨</div>
+					<div class="item">Rolling In The Deep</div>
+					<div class="item">Flower Dance</div>
+					<div class="item">Love the Way You Lie </div>
+					<div class="item">She</div>
+				</div>
+			</div>			
+		</div>
+		
+		
+
+		<script src="./js/word.js"></script>
+		<!--
+        	作者：1795811628@qq.com
+        	时间：2016-09-29
+        	描述：下下之策，用js文件来存放歌词，没办法了
+        -->
+        <script src="./js/player_js.js"></script>
+	</body>
+</html>
