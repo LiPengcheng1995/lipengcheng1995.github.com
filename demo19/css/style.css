@@ -1,0 +1,339 @@
+body{
+	text-align: center;
+	margin: 0px;
+	border: 0px;
+	padding: 0px;
+	margin-top: 30px;
+	background: white;
+}
+
+*{
+	box-sizing:border-box;
+}
+
+ul,ol{
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+}
+
+img{
+	width: 100%;
+	max-width: 100%;
+	height: auto;
+}
+
+
+.container{
+	margin: 0px auto;
+	padding: 0px 15px;
+}
+
+
+
+
+.header{
+	 border-bottom: 1px solid #eee;
+	 margin-bottom: 30px;
+}
+
+
+h1{
+	margin-top: 0px;
+	font-size: 30px;
+	color: #3c3c3c;
+	padding: 30px 15px;
+}
+
+h3{
+	margin: 0px;
+	padding: 30px 15px;
+	
+}
+
+h2{
+	color: black;
+	padding-bottom: 20px;
+	border-bottom: double 3px #eee;
+}
+
+p{
+	margin: 0px;
+	font-size: 16px;
+	color: #969393;
+	font-weight: bold;
+	padding: 30px 15px;
+}
+
+
+form{
+	width: 100%;
+	text-align: left;
+}
+
+form p{
+	padding: 15px 0px;
+}
+
+input{
+	display: inline-block;
+	text-shadow:none;
+	text-align: left;
+	background: #eee;
+	width: 350px;
+	min-width: 130px;
+	max-width: 50%;
+
+}
+
+
+
+
+#mainbody,#sidebar{
+	float: left;
+	margin-top: 30px;
+	margin-bottom: 20px;
+}
+
+#mainbody{
+	width: 67%;
+	padding-right: 15px;
+}
+
+#sidebar{
+	width: 33%;
+	padding-left: 15px;
+}
+
+.clear{
+	clear:both;
+}
+
+#nav{
+	margin-bottom: 20px;
+}
+
+#nav li,#nav li a{
+	text-decoration: none;
+	display: inline-block;
+	padding: 10px 15px;
+	color: #3b3b3b;
+}
+
+#nav a:hover{
+	background: #eee;
+}
+
+.active{
+	background: #eee;
+}
+
+.toggle-btn{
+	display: none;
+}
+
+.toggle-btn:hover{
+	background: #eee;
+}
+
+
+/* color用来设置背景色，同时保持mainbody和sidebar的padding为body颜色 */
+.color{
+	background: #eee;
+	height: 100%;
+}
+
+/* for slider */
+
+
+
+.swipe {
+  overflow: hidden;
+  visibility: hidden;
+  position: relative;
+}
+.swipe-wrap {
+  overflow: hidden;
+  position: relative;
+}
+.swipe-wrap > div {
+  float:left;
+  width:100%;
+  position: relative;
+}
+
+#slider i {
+	color: white;
+	line-height: 50px;
+	display: block;
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
+	opacity: 0.7;
+	background: #000;
+	font-size: 20px;
+}
+
+#slider .icon-double-angle-left{
+	position: absolute;
+	top: 46%;
+	left: 15px;
+}
+
+#slider .icon-double-angle-right{
+	position: absolute;
+	top: 46%;
+	right: 15px;
+}
+
+.bgimg{
+	background: url(../images/3.jpg) 50% 50% no-repeat;
+	-webkit-background-size: 100%;
+	background-size: cover; 
+	padding-top: 56%;
+/* 	background-size: 100%;
+100%填充可能会出现拉伸情况，虽然高度设置是按width的比例，但是用cover则是等比放缩
+ */
+}
+
+
+.res-padding{
+	background: #eee;
+    border: solid 1px #ddd;
+    padding: 3% 5%;
+    color: #969393
+}
+
+#footer{
+	clear:both;
+	border-top: 1px solid #eee;
+	margin-bottom: 20px;
+}
+
+h5{
+	line-height: 30px;
+}
+
+
+/* media queries */
+
+@media screen and (max-width: 768px){
+
+	.container{
+		padding: 0px;
+	}
+	#mainbody,#sidebar{
+		width: 100%;
+		float: none;
+		padding: 0px;
+	}
+
+	form{
+		padding: 0px 15px;
+	}
+
+	img{
+		padding: 0px;
+	}
+
+	.header{
+		text-align: left;
+	}
+	
+
+	/*切换按钮*/
+	.toggle-btn{
+		display: inline-block;
+		font-size: 25px;
+		text-decoration: none;
+		position: absolute;
+		background: white;
+		color:grey;
+		top: 50px;
+		right: 10px;
+		padding: 7px 10px;
+	}
+	
+	/*隐藏关闭按钮*/
+	#nav .close{
+		display: none;
+	}
+
+	#nav:target .close{
+		display: inline-block;
+	}
+
+	/*初始隐藏菜单*/
+
+	#nav{
+		display: none;
+	}
+
+	#nav:target{
+		display: block;
+		margin: 0px;
+		width: 100%;
+		position: absolute;
+		top: 0px;
+		padding-top: 135px;
+		z-index: 10;
+	}
+	
+
+	#nav:target ul{
+		background: white;
+	}
+
+	#nav:target li,#nav:target li a{
+		width: 100%;
+		display: block;
+		text-align: left;
+	}
+
+	#nav:target li a:hover{
+		background: #eee;
+	}
+	
+	#nav:target li a:active{
+		background: #eee;
+	}
+}
+
+@media screen and (min-width: 768px){
+	.container{
+		width: 100%;
+	}
+
+	.header{
+		text-align: center;
+	}
+
+	
+}
+
+
+@media screen and (min-width: 992px){
+	.container{
+		width: 970px;
+	}
+
+	.header{
+		text-align: center;
+	}
+}
+
+
+
+@media screen and (min-width: 1200px){
+	.container{
+		width: 1170px;
+	}
+
+	.header{
+		text-align: center;
+	}
+}
+
+
+
+

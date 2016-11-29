@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lan="en">
+
+	<head>
+		<meta charset="utf-8" />
+		<title>Responsive Design</title>
+		<meta name="viewport" content="width= device-width,initial-scale=2.0">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+		<script type="text/javascript" src="js/swipe.js"></script>
+
+	</head>
+
+	<body>
+
+		<div class="wrapper">
+			<div class="header">
+				<div class="container">
+					<h1>Demo: CSS Tricks for Responsive Design</h1>
+					<p>Responsive Toggle Navigation</p>
+				</div>
+			</div>
+			<div class="container">
+
+				<a href="#nav" class="open toggle-btn">
+					<i class="icon-reorder"></i>
+				</a>
+				<div id="nav">
+					<ul>
+						<li>
+							<a href="#1">Responsive Slider</a>
+						</li>
+						<li>
+							<a href="#2">Responsive Img</a>
+						</li>
+						<li>
+							<a href="#3">Responsive Padding</a>
+						</li>
+						<li>
+							<a href="#4">Responsive SideBar</a>
+						</li>
+						<li>
+							<a href="#5">Responsive Input</a>
+						</li>
+					</ul>
+					<a href="#" class="close toggle-btn">
+						<i class="icon-remove-sign"></i>
+					</a>
+				</div>
+				<h2 id="1">Responsive And Touchable Control Slider</h2>
+				<div id='slider' class='swipe'>
+					<div class='swipe-wrap'>
+						<div><img src="img/1.jpg" alt=""></div>
+						<div><img src="img/2.jpg" alt="2"></div>
+						<div><img src="img/3.jpg" alt="3"></div>
+					</div>
+					<i class="icon-double-angle-left" onclick="mySwipe.prev()"></i>
+					<i class="icon-double-angle-right" onclick="mySwipe.next()"></i>
+				</div>
+				<script>
+					window.mySwipe = Swipe(document.getElementById('slider'));
+				</script>
+				<h2 id="2">Responsive Img</h2>
+				<div class="imgdiv"><img src="img/2.jpg" alt=""></div>
+				<h2 id="3">Responsive Padding</h2>
+				<div class="res-padding">
+					Cras ultricies cursus nisl, eget congue tellus consequat nec. Cras id nibh neque, eu dignissim orci. Aenean at adipiscing urna. Suspendisse potenti. Suspendisse vitae tellus a neque commodo rutrum. Praesent ac neque vitae massa pharetra pellentesqu. Cras ultricies cursus nisl, eget congue tellus consequat nec. Cras id nibh neque, eu dignissim orci.
+				</div>
+				<h2>Responsive Background Img</h2>
+				<div class="bgimg"></div>
+
+				<h2 id="4">Responsive SideBar</h2>
+				<div id="mainbody">
+					<div class="color">
+						<h3>MainBody</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sem erat, egestas quis luctus ut, rhoncus vitae risus. Integer venenatis libero sit amet sapien dictum, quis bibendum mi volutpat. Cras pretium quam quis magna facilisis, eget feugiat nisi lacinia.</p>
+					</div>
+				</div>
+				<div id="sidebar">
+					<div class="color">
+						<h3>Sidebar</h3>
+						<p>
+							Donec dolor arcu, interdum sed turpis faucibus, placerat ultricies felis. Donec pulvinar gravida rhoncus.
+						</p>
+					</div>
+				</div>
+				<div class="clear"></div>
+				<h2 id="5">Respnsive Input</h2>
+				<form>
+					<div style="text-align:left">
+						<input type="text">
+						<span>  input</span>
+					</div>
+					<p>input响应式宽度属性设置：width: 350px;min-width: 130px;max-width: 50%; 当显示屏幕宽度的50%大于350px，input宽度显示为width值350px,当屏幕的50%不够350px,则显示为当前显示设备宽度的50%,最小宽度为130px。其他inline或者inline-block类元素同理
+					</p>
+				</form>
+			</div>
+			<footer id="footer">
+				<div class="container">
+					<h5>&copy; Copyright ECIZEP</h5>
+				</div>
+			</footer>
+		</div>
+	</body>
+
+</html>
