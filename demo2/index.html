@@ -1,0 +1,215 @@
+<DOCTYPE! html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<script src="bessel.js"></script>
+		<title>实例二</title>
+		<style>
+			html,body{
+				width: 100%;
+				height: 100%;
+				margin: 0;
+				padding: 0;
+				font-family: "Microsoft Yahei";
+			}
+			#selector{
+				width: 515px;
+				margin: auto;
+				border:1px solid green;
+			}
+			#selector .row{
+				height: 44px;
+				line-height: 44px;
+			}
+			#selector .row .head{
+				font-size: 12px;
+				text-indent: 10px;
+				width: 15%;
+				float: left;
+				color: #838383;
+
+			}
+			#selector .row .detail{
+				width: 85%;
+				float: left;
+			}
+			#selector .row .detail ul{
+				list-style: none;
+				margin-top: 8px;
+			}
+			#selector .row .detail ul li{
+				float: left;
+				height:30; 
+				width:35;
+				margin-right: 8px;
+				text-align: center;
+				line-height: 30px;
+				border:1px solid #838383;
+				
+				
+			}
+			#selector .row .detail ul li label{
+				display: block;
+				cursor: pointer;
+				position: relative;
+				
+			}
+			#selector .row .detail ul li label input{
+				position: absolute;
+				top:-1000px;
+
+			
+			}
+			#selector .row .detail ul li label span {
+				width: 35px;
+				height: 30px;
+				border:2px solid #c30008;
+				position: absolute;
+				top: -2px;
+				left: -2px;
+				display: none;
+			}
+			#selector .row .detail ul li label i{
+				width: 12px;
+				height:12px;
+				position: absolute;
+				right: 0;
+				bottom: 0;
+				background-image: url("./imgs/icos.png");
+				background-position: -62px -17px;
+				display: none;
+
+			}
+			#selector .row .detail ul li label input:checked ~ span{
+				display: block;
+				
+			}
+			#selector .row .detail ul li label input:checked ~ i{
+				display: block;
+				
+			}
+
+		</style>
+	</head>
+	<body>
+		<div id="selector">
+			<form action="#">
+				<div class="row">
+					<div class="head">尺码</div>
+					<div class="detail">
+						<ul>
+							<li>
+								<label>
+									39
+									<input name="size" type="radio">
+									<span></span>
+									<i></i>
+								</label>
+							</li>
+							<li>
+								<label>
+									40
+									<input name="size" type="radio">
+									<span></span>
+									<i></i>
+								</label>
+							</li>
+							<li>
+								<label>
+									41
+									<input name="size" type="radio">
+									<span></span>
+									<i></i>
+								</label>
+							</li>
+							<li>
+								<label>
+									42
+									<input name="size" type="radio">
+									<span></span>
+									<i></i>
+								</label>
+							</li>
+							<li>
+								<label>
+									43
+									<input name="size" type="radio">
+									<span></span>
+									<i></i>
+								</label>
+							</li>
+							<li>
+								<label>
+									44
+									<input name="size" type="radio">
+									<span></span>
+									<i></i>
+								</label>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="row">
+					<div class="head">颜色分类</div>
+					<div class="detail">
+						<ul>
+							<li>
+								<label>
+									<img src="./imgs/style_1.jpg" alt="">
+									<input name="style" type="radio">
+									<span></span>
+									<i></i>
+								</label>
+							</li>
+							<li>
+								<label>
+									<img src="./imgs/style_2.jpg" alt="">
+									<input name="style" type="radio">
+									<span></span>
+									<i></i>
+								</label>
+							</li>
+							<li>
+								<label>
+									<img src="./imgs/style_3.jpg" alt="">
+									<input name="style" type="radio">
+									<span></span>
+									<i></i>
+								</label>
+							</li>
+							<li>
+								<label>
+									<img src="./imgs/style_4.jpg" alt="">
+									<input name="style" type="radio">
+									<span></span>
+									<i></i>
+								</label>
+							</li>
+							<li>
+								<label>
+									<img src="./imgs/style_5.jpg" alt="">
+									<input name="style" type="radio">
+									<span></span>
+									<i></i>
+								</label>
+							</li>
+						</ul>						
+
+					</div>
+				</div>
+				<div class="row">
+					<div class="head">数量</div>
+					<div class="detail">&nbsp;</div>
+				</div>
+				<div class="row">
+					<div class="head">&nbsp;</div>
+					<div class="detail">
+						<a href="">立即购买</a>
+						<a href="">加入购物车</a>
+					</div>
+				</div>
+			</form>
+		</div>
+		
+	</body>
+</html>
