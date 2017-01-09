@@ -299,6 +299,12 @@ function identifyType(register){
 	if (register.length == 2 && register.charCodeAt() == "-".charCodeAt()&& register.charCodeAt(1) == "=".charCodeAt()) {
 		return "o";
 	}
+	if (register.length == 2 && register.charCodeAt() == "*".charCodeAt()&& register.charCodeAt(1) == "=".charCodeAt()) {
+		return "o";
+	}
+	if (register.length == 2 && register.charCodeAt() == "/".charCodeAt()&& register.charCodeAt(1) == "=".charCodeAt()) {
+		return "o";
+	}
 	if (register.length == 1 && register.charCodeAt() == "?".charCodeAt()) {
 		return "n";
 	}
