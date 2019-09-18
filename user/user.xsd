@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <schema xmlns="http://www.w3.org/2001/XMLSchema"
-        targetNamespace="http://lipengcheng.club:8080/schema/user"
+        targetNamespace="https://lipengcheng1995.github.io/user"
 >
     <element name="user">
         <complexType>
